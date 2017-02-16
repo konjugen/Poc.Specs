@@ -1,0 +1,45 @@
+﻿VS filter: testpath:TestAssembly:Poc.Specs/Feature:User/Scenario:Valid+user+login
+Discovering target: Default
+Discovering tests from assembly: C:\Users\anil.gurbuz\Documents\Visual Studio 2015\Projects\Poc.Specs\Poc.Specs\bin\Debug\Poc.Specs.dll
+Appdomain Disposed
+Test Suite Dump
+#0: Poc.Specs/Default - 
+#1: Default - 
+#2: Poc.Specs - 
+#3: User - 
+#4: Valid user login - TestAssembly:Poc.Specs/Feature:User/Scenario:Valid+user+login
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread
+Thread#0:Scheduler: using testitem #4 for thread
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for Poc.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\anil.gurbuz\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:B:Given I am on the "/login"
+Thread#0:T:done: StepDefinitionBase.GivenIAmOnThe("/login") (6.6s)
+Thread#0:B:And The following element filled with data:
+Thread#0:B:  --- table step argument ---
+Thread#0:B:  | name      | value                    |
+Thread#0:B:  | #Email    | site.admin@inveon.com.tr |
+Thread#0:B:  | #Password | zFh@23e?b                |
+Thread#0:T:done: StepDefinitionBase.GivenFilledData(<table>) (3.5s)
+Thread#0:B:Then I click "GİRİŞ YAP" button
+Thread#0:T:done: StepDefinitionBase.ThenIClickButton("GİRİŞ YAP") (13.7s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread 
+Thread#0: Test #4/0 is finished on thread #0 as Succeeded within 24.0277026 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 1
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0
