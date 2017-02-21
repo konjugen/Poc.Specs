@@ -219,7 +219,8 @@ namespace Specs.StepDefinitions
         public void ThenIShouldSeeUrl(string url)
         {
             Console.WriteLine(Constants.BaseUrl + url);
-            Assert.IsTrue(new List<string> { Constants.BaseUrl + url }.CheckUrl());
+            var result = new List<string> { Constants.BaseUrl + url }.CheckUrl();
+            Assert.IsTrue(result);
         }
 
         [Then(@"I should see url include ""(.*)""")]

@@ -151,12 +151,9 @@ namespace Specs.Utilities
                     return false;
                 }
 
-                if (result)
-                {
-                    return true;
-                }
-
                 Thread.Sleep(1000);
+
+                return result;               
             }
 
         }
@@ -204,5 +201,10 @@ namespace Specs.Utilities
             return result;
         }
 
+        public static IWebElement GetElementById(string text)
+        {
+            var element = Driver.Current.FindElement(By.Id(text));
+            return element;
+        }
     }
 }

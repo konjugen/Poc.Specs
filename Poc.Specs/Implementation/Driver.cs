@@ -6,6 +6,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.PhantomJS;
 using TechTalk.SpecFlow;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
@@ -39,6 +40,10 @@ namespace Specs.Utilities
                     else if (Constants.getDriver == "chrome")
                     {
                         driver = new ChromeDriver();
+                    }
+                    else if (Constants.getDriver == "phantom")
+                    {
+                        driver = new PhantomJSDriver(@"C:\Users\anil.gurbuz\Downloads\phantomjs-2.1.1-windows\bin");
                     }
 
                     driver.Manage()
